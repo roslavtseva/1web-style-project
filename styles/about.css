@@ -2,6 +2,8 @@
     padding: 46px 15px;
     width: 100%;
     background-color: #F4F5F7;
+    display: flex;
+
 
 }
 article:last-child{
@@ -20,7 +22,7 @@ article:last-child{
         line-height: 32px;
         margin: 0;
         }
-@media screen and (mai-width: 400px){
+@media screen and (max-width: 400px){
     
     .about{
    
