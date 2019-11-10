@@ -1,205 +1,193 @@
-.footer{
-    margin-top: auto;
-    display: flex;
-    flex-direction: column; 
-}
-.about-company{
-    margin-top: 44px;
+.footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
 
-}
-.footer__description{
+  &__description {
     display: none;
     line-height: 26px;
     font-size: 18px;
     margin-top: 26px;
     width: 360px;
-    color:  rgba(43, 41, 45, 0.6);
-}
+    color: rgba(43, 41, 45, 0.6);
 
-.footer-navigation{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-@media screen and (min-width: 400px) {
-    .footer-navigation{
-        width: 1140px;
-        margin: 0 auto;
-        height: 338px;
-        display: flex;
-        flex-direction: row;
-    } 
-}
-.downloads{
-    margin: 25px 15px 0 15px;
-    display: flex;
-    justify-content: center;
-
-}
-@media screen and (min-width: 400px) {
-    .downloads{
-        margin: 0;
-        margin-top: 25px;
-        justify-content: left;
-    
+    @include for-large-up {
+      display: block;
     }
-}
-.downloads__item{
-    margin-right: 10px;
-}
-.additional-navigation{
-    margin-left: 15px;
-    margin-right: 15px;
-    display: flex;
-    flex-direction: column;
-}
-@media screen and (min-width: 400px) {
-    .additional-navigation{
-        margin-top: 60px;
-        flex-direction: row;
-        margin-left: auto;
-
-    } 
-}
-
-.additional-navigation__column {
-    margin-top: 30px;
-}
-@media screen and (min-width: 400px) {
-    .additional-navigation__column {
-        margin-top: 0;
-        margin-right: 29px;
-    }
-}
-
-.nav-links{
-    width: 265px;
-}
-.nav-links__title{
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 28px;
-    color: #2B292D;
-    margin:0;
-}
-.nav-links__title{
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 28px;
-    color: #2B292D;
-    margin:0;
-}
-.nav-links__list{
-    list-style-type: none;
-    font-size: 18px;
-    line-height: 30px;
-    color:  rgba(43, 41, 45, 0.6);
-    margin: 0;
-    padding: 0;
-    margin-top: 18px;
-}
-.footer__line{
-    border: 1px solid #2B292D;
+  }
+  &__line {
+    border: 1px solid #2b292d;
     width: 100%;
     opacity: 0.1;
     margin-top: 40px;
-}
-@media screen and (min-width: 400px) {
-    .footer__line{
-        margin:0;
+
+    @include for-large-up {
+      margin: 0;
     }
+  }
+
+  .logo {
+    @include for-large-down {
+      display: none;
+    }
+  }
 }
-.footer-links{
-    margin-left: 15px;
+
+.about-company {
+  margin-top: 44px;
+}
+
+.footer-navigation {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  @include for-large-up {
+    width: 1140px;
+    margin: 0 auto;
+    height: 338px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+  }
+}
 
+.downloads {
+  margin: 25px 15px 0 15px;
+  display: flex;
+  justify-content: center;
+
+  @include for-large-up {
+    margin: 0;
+    margin-top: 25px;
+    justify-content: left;
+  }
+  &__item {
+    margin-right: 10px;
+  }
 }
-@media screen and (min-width: 400px) {
-    .footer-links{
-        height: 50px;
-        width: 1140px;
-        flex-direction: row;
-        margin: 0 auto;
-        align-items: center;
-    } 
-}
-.terms{
-   line-height: 22px;
-   font-size: 14px;
+
+.additional-navigation {
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+
+  @include for-large-up {
+    margin-top: 60px;
+    flex-direction: row;
+    margin-left: auto;
+  }
+  &__column {
     margin-top: 30px;
+
+    @include for-large-up {
+      margin-top: 0;
+      margin-right: 29px;
+    }
+  }
 }
 
-@media screen and (min-width: 400px) {
-    .terms{
-        line-height: 50px;
-        margin-top: 0px;
+.nav-links {
+  width: 265px;
 
-     }
+  &__title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2b292d;
+    margin: 0;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2b292d;
+    margin: 0;
+  }
+  &__list {
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(43, 41, 45, 0.6);
+    margin: 0;
+    padding: 0;
+    margin-top: 18px;
+  }
 }
-.terms__items{
-    color:  rgba(43, 41, 45, 0.6);
+
+.footer-links {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+
+  @include for-large-up {
+    height: 50px;
+    width: 1140px;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+.terms {
+  line-height: 22px;
+  font-size: 14px;
+  margin-top: 30px;
+
+  @include for-large-up {
+    line-height: 50px;
+    margin-top: 0px;
+  }
+  &__items {
+    color: rgba(43, 41, 45, 0.6);
     text-decoration: none;
     margin-right: 22px;
+  }
 }
-.social-links{
-    margin-top: 30px;
-    margin-bottom: 23px;
-}
-@media screen and (min-width: 400px) {
-    .social-links{
-        margin-left: 15px;
-        margin-bottom: 0px;
 
-    } 
-}
-.social-links__items{
+.social-links {
+  margin-top: 30px;
+  margin-bottom: 23px;
+
+  @include for-large-up {
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+  &__items {
     margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 }
-.social-links__items:first-child{
-    margin-left: 0;
-}
 
-.logo-vertical{
- display: flex;
- flex-direction: column;
- align-items: center;
-}  
+.logo-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  @include for-large-up {
+    display: none;
+  }
 
-.logo-vertical__image{
+  &__image {
     width: 60px;
     height: 60px;
-}
+  }
 
-.logo-vertical__name{
+  &__name {
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
     text-align: center;
     margin-top: 20px;
-}
+  }
 
-.logo-vertical__description{
+  &__description {
     font-size: 18px;
     line-height: 25px;
     text-align: center;
     color: rgba(43, 41, 45, 0.6);
-}
-
-@media screen and (min-width: 400px) {
-    .logo-vertical{
-        display: none;
-    }  
-    .footer__description{
-        display: block;
-       
-      
-    }
-}
-@media screen and (max-width: 399px) {
-    .footer .logo{
-        display: none;
-    }  
-
+  }
 }
