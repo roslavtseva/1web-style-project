@@ -22,58 +22,9 @@
         background: transparent;
 
     }
-   
-    @media screen and (min-width: 400px) {
-        
-        .top-section{
-            background-color: #F3C6BD;
-            padding-top: 39px;
-        }
-        .header__menu-button{
-            display: none;
-        }
-        .header__menu-icon{
-            width: 18px;
-            height: 13px;
-            background-image: url("../img/icon-humburger.png");
-            display: inline-block;
-
-        }
-        .navigation{
-            display: block;
-            margin-left: auto;
-            margin-top: 7px;
-            margin-right: 75px;
-            
-            
-        }
-        .header{
-            width: 1140px;
-            height:62px;
-            margin:auto;
-            display: flex;
-            
-            }
-         .header__button{
-             display: block;
-         }   
-         .logo__description{
-            font-size: 18px;
-            line-height: 25px;
-            color: #2B292D;
-            opacity: 0.6;
-            
-        
-        }
-        logo__image{
-            width: 48px;
-            height: 48px;
-            margin-right: 13px;
-        
-        }
+    .top-section{
+        background-color: #F3C6BD;
     }
-
-
     .navigation__item{
         color: #2B292D;
         text-decoration: none;
@@ -104,8 +55,7 @@
         display:flex;
     
     }
-    
-    
+     
     .logo__name{
         font-size: 20px;
         line-height: 25px;
@@ -124,8 +74,58 @@
         justify-content: center;
     
     }
-    .top-section{
-        background-color: #F3C6BD;
+    
+   
+    @media screen and (min-width: 400px) {
         
+        .top-section{
+            background-color: #F3C6BD;
+            padding-top: 39px;
+        }
+        .header__menu-button{
+            display: none;
+        }
+    
+        .navigation{
+            display: block;
+            margin-left: auto;
+            margin-top: 7px;
+            margin-right: 75px;
+            
+            
+        }
+        .header{
+            width: 1140px;
+            height:62px;
+            margin:auto;
+            display: flex;
+            background: transparent;
+            }
+
+         .header__button{
+             display: block;
+         }   
+         .logo__description{
+            font-size: 18px;
+            line-height: 25px;
+            color: #2B292D;
+            opacity: 0.6;
+            
+        
+        }
+        logo__image{
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        
+        }
+        .header .logo__description{
+            display: block;
+        }
     }
+
+
+    
+   
+    
     
