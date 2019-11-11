@@ -1,53 +1,69 @@
 .order {
+  padding: 50px 15px;
+  background-color: $color-light;
 
-    padding: 50px 15px;
-    background-color: $color-light;
+  @include for-large-up {
+    padding: 73px 0 72px 0;
+    display: flex;
+  }
 
+  &__details{
+      max-width: 555px;
+  }
 
-    @include for-large-up{
+  &__illustration {
+    max-width: 200px;
 
+    @include for-large-up {
+        max-width: 269px;
+        margin-right: 121px;
+    
+      }
+  }
+
+  &__title {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+  }
+
+  &__button{
+      margin-top: 12px;
+      width: 100%
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 34px;
+    color: $text-color-dark;
+    margin: 0;
+    margin-top: 18px;
+  }
+
+  &__email {
+    margin-top: 40px;
+    background: $color-white;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    height: 48px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 13px;
+
+    &::placeholder{
+        color: $color-dark;
     }
+  }
 
-    &__illustration{
-        max-width: 200px;
+  &__terms {
+    font-size: 14px;
+    line-height: 22px;
+    color: $text-color-light-grey;
+  }
 
-    }
-
-    &__title{
-        margin-top: 40px;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 40px;
-        letter-spacing: -0.357143px;
-    }
-
-    &__text{
-        font-size: 24px;
-        line-height: 34px;
-        color: $text-color-dark;
-        margin-top: 18px;
-        
-
-    }
-
-    &__email{
-        margin-top: 40px;
-        background: $color-white;
-        border: 1px solid $border-color;
-        border-radius: 2px;
-        height: 48px;
-        width: 100%
-    }
-
-
-    &__terms{
-        font-size: 14px;
-        line-height: 22px;
-        color: $text-color-light-grey;
-    }
-
-    &__terms-link{
-        color: $text-color-blue;
-
-    }
+  &__terms-link {
+    color: $text-color-blue;
+  }
 }
