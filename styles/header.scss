@@ -135,10 +135,10 @@
     
     
     .top-section{
-        background-color: #F3C6BD;
+        background-color: $color-pink-orange;
 
         @include for-large-up {
-            background-color: #F3C6BD;
+            background-color: $color-pink-orange;
             padding-top: 39px;
         }
     }
