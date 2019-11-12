@@ -27,6 +27,13 @@
     line-height: 40px;
     letter-spacing: -0.357143px;
     max-width: 555px;
+
+    @include for-large-up {
+        margin-top: 24px;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -0.5px;
+    }
   }
 
   &__description {
@@ -35,11 +42,19 @@
     margin-top: 18px;
     font-size: 24px;
     line-height: 34px;
+
+    @include for-large-up {
+        margin-top: 30px;
+    }
   }
 
   &__button {
     margin-top: 12px;
     width: 100%;
+
+    @include for-large-up {
+        width: 160px;
+    }
 
     &-blue {
       color: $text-color-black;
@@ -50,6 +65,13 @@
     width: 100%;
     max-width: 290px;
     margin-top: 18px;
+
+    @include for-large-up {
+        min-width: 340px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 22px;
+    }
   }
 
   &__sector {
