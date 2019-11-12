@@ -1,0 +1,107 @@
+.audience {
+  padding: 50px 15px;
+  background-color: $color-light-blue;
+  text-align: center;
+
+  @include for-large-up {
+    padding: 108px 0 110px;
+  }
+
+  &__sector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__subtitle {
+    line-height: 34px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: 17px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+    max-width: 555px;
+  }
+
+  &__description {
+    max-width: 555px;
+    margin: 0;
+    margin-top: 18px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  &__button {
+    margin-top: 12px;
+    width: 100%;
+
+    &-blue {
+      color: $text-color-black;
+    }
+  }
+
+  &__button-promotion {
+    width: 100%;
+    max-width: 290px;
+    margin-top: 18px;
+  }
+
+  &__sector {
+    margin-top: 25px;
+
+    @include for-large-up {
+      margin-top: 94px;
+    }
+  }
+
+  .sector {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @include for-large-up {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__item {
+      width: 290px;
+      padding-top: 22px;
+      margin-top: 15px;
+      padding-bottom: 33px;
+      border-radius: 8px;
+      background-color: $color-white;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1),
+        inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+
+      @include for-large-up {
+        width: 262px;
+      }
+
+      &_selected {
+        color: $color-white;
+        background-color: $color-dark-blue;
+      }
+      &:hover {
+        color: $color-white;
+        background-color: $color-dark-blue;
+      }
+    }
+
+    &__title {
+      margin: 0;
+      margin-top: 18px;
+      line-height: 28px;
+      font-size: 22px;
+      font-weight: 700;
+    }
+  }
+}
