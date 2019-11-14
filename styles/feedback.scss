@@ -1,7 +1,7 @@
 .feedback {
   position: relative;
   text-align: left;
-  padding: 39px 15px 50px;
+  padding: 0 15px 50px;
   border-bottom: 1px solid #0000001a;
 
   @include for-large-up {
@@ -12,6 +12,7 @@
   &__content {
     display: flex;
     flex-direction: column;
+    /*padding-top: 39px;*/
 
     @include for-large-up {
         align-items: center;
