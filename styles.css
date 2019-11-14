@@ -1160,6 +1160,8 @@
 }
 @media screen and (min-width: 1400px) {
   .audience .sector {
+    padding-left: 130px;
+    padding-right: 131px;
     display: flex;
     justify-content: space-around;
   }
@@ -1173,15 +1175,15 @@
   background-color: #fff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
   cursor: pointer;
+  /* &_selected {
+     color: $color-white;
+     background-color: $color-dark-blue;
+   }*/
 }
 @media screen and (min-width: 1400px) {
   .audience .sector__item {
     width: 262px;
   }
-}
-.audience .sector__item_selected {
-  color: #fff;
-  background-color: #3141c5;
 }
 .audience .sector__item:hover {
   color: #fff;

@@ -104,6 +104,8 @@
     width: 100%;
 
     @include for-large-up {
+      padding-left: 130px;
+      padding-right: 131px;
       display: flex;
       justify-content: space-around;
     }
@@ -123,10 +125,10 @@
         width: 262px;
       }
 
-      &_selected {
+     /* &_selected {
         color: $color-white;
         background-color: $color-dark-blue;
-      }
+      }*/
       &:hover {
         color: $color-white;
         background-color: $color-dark-blue;
