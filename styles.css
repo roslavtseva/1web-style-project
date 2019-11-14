@@ -247,6 +247,7 @@
 }
 @media screen and (min-width: 1400px) {
   .footer__line {
+    display: none;
     margin: 0;
   }
 }
@@ -650,8 +651,8 @@
   font-size: 20px;
   line-height: 25px;
   font-weight: 700;
-  margin-top: 20px;
-  margin-left: 13px;
+  margin-top: 10px;
+  /* margin-left: 13px;*/
 }
 .top-section .logo__description {
   display: none;
@@ -1344,7 +1345,7 @@
   .inbox__content {
     display: flex;
     justify-content: center;
-    padding: 115px 0 101px;
+    padding: 115px 129px 101px 193px;
   }
 }
 .inbox__graphic {

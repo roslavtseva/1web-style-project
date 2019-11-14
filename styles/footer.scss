@@ -22,6 +22,7 @@
     margin-top: 40px;
 
     @include for-large-up {
+      display: none;
       margin: 0;
     }
   }
