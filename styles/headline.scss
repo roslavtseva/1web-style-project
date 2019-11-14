@@ -1,10 +1,11 @@
 .headline {
   width: 100%;
   padding: 15px;
+  background-color: $color-pink-orange;
 
   @include for-large-up {
     display: flex;
-    position: relative;
+    /*position: relative;*/
     width: 1140px;
     margin: auto;
     margin-top: 84px;
@@ -87,11 +88,12 @@
     margin-top: 33px;
 
     @include for-large-up {
-      position: relative;
-      top: 0;
-      right: -105px;
-      width: 796;
-      height: 448;
+      position: absolute;
+      top: 185px;
+      /* right: -105px; */
+      left: 579px;
+      width: 796px;
+      height: 448px;
     }
   }
 

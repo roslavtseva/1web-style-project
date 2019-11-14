@@ -47,6 +47,11 @@
     @include for-large-up {
       margin-top: 28px;
       width: 247px;
+      background-color: $color-deep-blue;
+      border: 2px solid $color-deep-blue;
+      padding: 17px 29px 18px 28px;
+      color: $text-color-white;
+      font-weight: 700;
     }
   }
 
@@ -69,6 +74,13 @@
     &:first-child {
       margin-top: 0;
     }
+
+    &__title-selected{
+      @include for-large-up {
+      background-color: $color-deep-blue;
+      color: $text-color-white;
+      }
+    }
   }
 }
 
@@ -84,6 +96,7 @@
 
     .vacancy__title {
       color: $text-color-white;
+
     }
     .vacancy__location {
       color: $text-color-white;

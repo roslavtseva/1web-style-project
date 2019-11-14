@@ -1,3 +1,11 @@
+.top-section{
+    background-color: $color-pink-orange;
+
+    @include for-large-up {
+        background-color: $color-pink-orange;
+        padding-top: 39px;
+        height: 710px;
+    }
 .header{
     height: 64px;
     width: 100%;
@@ -52,7 +60,8 @@
         }
         
     }
-
+    
+    }
 
 
     .navigation{
@@ -135,14 +144,7 @@
      
     
     
-    .top-section{
-        background-color: $color-pink-orange;
-
-        @include for-large-up {
-            background-color: $color-pink-orange;
-            padding-top: 39px;
-        }
-    }
+    
 }
    
 

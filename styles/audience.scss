@@ -3,14 +3,29 @@
   background-color: $color-light-blue;
   text-align: center;
 
+
   @include for-large-up {
     padding: 108px 0 110px;
+  }
+
+  &__promotion{
+    @include for-large-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
   }
 
   &__sector {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include for-large-up{
+      flex-direction: row;
+
+    }
+
   }
 
   &__subtitle {
