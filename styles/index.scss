@@ -1,39 +1,39 @@
-@import 'breakpoints.scss';
-@import 'variables.scss';
-@import 'common.scss';
-@import 'about.scss';
-@import 'customers.scss';
-@import 'features.scss';
-@import 'footer.scss';
-@import 'headline.scss';
-@import 'header.scss';
-@import 'tips.scss';
-@import 'order.scss';
-@import 'hiring.scss';
-@import 'feedback.scss';
-@import 'audience.scss';
-@import 'communications.scss';
-@import 'inbox.scss';
+@import "breakpoints.scss";
+@import "variables.scss";
+@import "common.scss";
+@import "about.scss";
+@import "customers.scss";
+@import "features.scss";
+@import "footer.scss";
+@import "headline.scss";
+@import "header.scss";
+@import "tips.scss";
+@import "order.scss";
+@import "hiring.scss";
+@import "feedback.scss";
+@import "audience.scss";
+@import "communications.scss";
+@import "inbox.scss";
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 16px;
-    color: #2B292D;
+html {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: #2b292d;
 }
-.page{
-    width: 100%;
-    overflow-x: hidden;
+.page {
+  width: 100%;
+  overflow-x: hidden;
 
-    @include for-large-up {
-     max-width: 1400px;
-    margin:auto;
+  @include for-large-up {
+    max-width: 1400px;
+    margin: auto;
     margin-bottom: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    }
+  }
 }

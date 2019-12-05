@@ -25,7 +25,7 @@
     }
   }
 
-  &__introduction {
+  &__intro {
 
     @include for-large-up {
       max-width: 460px;
@@ -57,7 +57,7 @@
     }
   }
 
-  &__description {
+  &__desc {
     margin: 0;
     margin-top: 18px;
     font-size: 24px;

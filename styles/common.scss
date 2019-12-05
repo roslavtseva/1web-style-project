@@ -34,17 +34,15 @@
 
   .hide_desktop {
     @include for-large-up {
-        display: none;
-
+      display: none;
     }
-}
+  }
 
-
-   .hide_mobile{
+  .hide_mobile {
     @include for-large-down {
-        display: none;
+      display: none;
     }
-}
+  }
 }
 /*
 .icon-arrow_right {
